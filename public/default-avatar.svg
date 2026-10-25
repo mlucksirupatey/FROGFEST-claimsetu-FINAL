@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%" fill="none">
+  <!-- Background Circle with Neo-Brutalist Border -->
+  <rect width="128" height="128" rx="28" fill="#F1F5F9" />
+  <rect width="128" height="128" rx="28" stroke="#0F172A" stroke-width="4" />
+  
+  <!-- Subtle Inner Ring -->
+  <circle cx="64" cy="64" r="54" fill="#E2E8F0" opacity="0.6" />
+
+  <!-- Avatar Head -->
+  <circle cx="64" cy="46" r="20" fill="#064E3B" stroke="#0F172A" stroke-width="3" />
+  
+  <!-- Avatar Body / Shoulders -->
+  <path d="M28 106 C28 82, 44 76, 64 76 C84 76, 100 82, 100 106" fill="#064E3B" stroke="#0F172A" stroke-width="3" />
+
+  <!-- Professional Tie / Collar Detail -->
+  <polygon points="64,76 60,94 64,106 68,94" fill="#10B981" />
+  <circle cx="64" cy="92" r="2" fill="#FFFFFF" />
+</svg>

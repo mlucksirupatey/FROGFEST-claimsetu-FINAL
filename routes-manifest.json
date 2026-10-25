@@ -1,0 +1,302 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/api/auth/[...nextauth]",
+      "regex": "^/api/auth/(.+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPnextauth": "nxtPnextauth"
+      },
+      "namedRegex": "^/api/auth/(?<nxtPnextauth>.+?)(?:/)?$"
+    },
+    {
+      "page": "/api/claims/[id]/documents",
+      "regex": "^/api/claims/([^/]+?)/documents(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/claims/(?<nxtPid>[^/]+?)/documents(?:/)?$"
+    },
+    {
+      "page": "/api/claims/[id]/evaluate",
+      "regex": "^/api/claims/([^/]+?)/evaluate(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/claims/(?<nxtPid>[^/]+?)/evaluate(?:/)?$"
+    },
+    {
+      "page": "/api/claims/[id]/process",
+      "regex": "^/api/claims/([^/]+?)/process(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/claims/(?<nxtPid>[^/]+?)/process(?:/)?$"
+    },
+    {
+      "page": "/api/claims/[id]/reason",
+      "regex": "^/api/claims/([^/]+?)/reason(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/claims/(?<nxtPid>[^/]+?)/reason(?:/)?$"
+    },
+    {
+      "page": "/api/claims/[id]/result",
+      "regex": "^/api/claims/([^/]+?)/result(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/claims/(?<nxtPid>[^/]+?)/result(?:/)?$"
+    },
+    {
+      "page": "/api/claims/[id]/status",
+      "regex": "^/api/claims/([^/]+?)/status(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/claims/(?<nxtPid>[^/]+?)/status(?:/)?$"
+    },
+    {
+      "page": "/portal/claims/[id]/result",
+      "regex": "^/portal/claims/([^/]+?)/result(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/portal/claims/(?<nxtPid>[^/]+?)/result(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/api/auth/me",
+      "regex": "^/api/auth/me(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/me(?:/)?$"
+    },
+    {
+      "page": "/api/auth/register",
+      "regex": "^/api/auth/register(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/register(?:/)?$"
+    },
+    {
+      "page": "/api/claims",
+      "regex": "^/api/claims(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/claims(?:/)?$"
+    },
+    {
+      "page": "/api/institutional/members/import",
+      "regex": "^/api/institutional/members/import(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/institutional/members/import(?:/)?$"
+    },
+    {
+      "page": "/api/institutions",
+      "regex": "^/api/institutions(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/institutions(?:/)?$"
+    },
+    {
+      "page": "/api/insurer/members/import",
+      "regex": "^/api/insurer/members/import(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/insurer/members/import(?:/)?$"
+    },
+    {
+      "page": "/api/insurer/members/lookup",
+      "regex": "^/api/insurer/members/lookup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/insurer/members/lookup(?:/)?$"
+    },
+    {
+      "page": "/api/insurer/profile",
+      "regex": "^/api/insurer/profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/insurer/profile(?:/)?$"
+    },
+    {
+      "page": "/api/policies",
+      "regex": "^/api/policies(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/policies(?:/)?$"
+    },
+    {
+      "page": "/api/policyholder/profile",
+      "regex": "^/api/policyholder/profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/policyholder/profile(?:/)?$"
+    },
+    {
+      "page": "/apple-icon.png",
+      "regex": "^/apple\\-icon\\.png(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apple\\-icon\\.png(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/icon.png",
+      "regex": "^/icon\\.png(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/icon\\.png(?:/)?$"
+    },
+    {
+      "page": "/insurer",
+      "regex": "^/insurer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/insurer(?:/)?$"
+    },
+    {
+      "page": "/insurer/claims/new",
+      "regex": "^/insurer/claims/new(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/insurer/claims/new(?:/)?$"
+    },
+    {
+      "page": "/insurer/dashboard",
+      "regex": "^/insurer/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/insurer/dashboard(?:/)?$"
+    },
+    {
+      "page": "/insurer/policies",
+      "regex": "^/insurer/policies(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/insurer/policies(?:/)?$"
+    },
+    {
+      "page": "/insurer/policy-holders",
+      "regex": "^/insurer/policy\\-holders(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/insurer/policy\\-holders(?:/)?$"
+    },
+    {
+      "page": "/insurer/profile",
+      "regex": "^/insurer/profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/insurer/profile(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/newclaim",
+      "regex": "^/newclaim(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/newclaim(?:/)?$"
+    },
+    {
+      "page": "/portal",
+      "regex": "^/portal(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/portal(?:/)?$"
+    },
+    {
+      "page": "/portal/claims/new",
+      "regex": "^/portal/claims/new(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/portal/claims/new(?:/)?$"
+    },
+    {
+      "page": "/portal/newclaim",
+      "regex": "^/portal/newclaim(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/portal/newclaim(?:/)?$"
+    },
+    {
+      "page": "/portal/profile",
+      "regex": "^/portal/profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/portal/profile(?:/)?$"
+    },
+    {
+      "page": "/register",
+      "regex": "^/register(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/register(?:/)?$"
+    },
+    {
+      "page": "/register/insurer",
+      "regex": "^/register/insurer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/register/insurer(?:/)?$"
+    },
+    {
+      "page": "/register/policyholder",
+      "regex": "^/register/policyholder(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/register/policyholder(?:/)?$"
+    },
+    {
+      "page": "/signout",
+      "regex": "^/signout(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/signout(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
